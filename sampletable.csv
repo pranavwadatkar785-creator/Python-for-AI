@@ -1,0 +1,11 @@
+Name,Age,Department,Salary,Experience,City
+Pranav,20,IT,50000,1,Pune
+Rahul,21,HR,45000,2,Mumbai
+Aman,19,IT,52000,1,Nashik
+Sneha,22,Finance,60000,3,Pune
+Riya,20,HR,,2,Mumbai
+Karan,23,Marketing,55000,4,Nagpur
+Neha,21,Finance,61000,,Pune
+Arjun,20,IT,53000,1,Nashik
+Priya,22,Marketing,57000,3,Mumbai
+Vikas,24,HR,62000,5,Pune

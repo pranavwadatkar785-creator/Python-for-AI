@@ -1,0 +1,40 @@
+{
+    "Number of columns": 6,
+    "Number of Rows": 10,
+    "Name": [
+        "Riya",
+        "Priya",
+        "Pranav",
+        "Neha",
+        "Aman",
+        "Sneha",
+        "Arjun",
+        "Karan",
+        "Vikas",
+        "Rahul"
+    ],
+    "Age": {
+        "Avg": 21.2,
+        "Missing Values": 0
+    },
+    "Department": [
+        "HR",
+        "Finance",
+        "IT",
+        "Marketing"
+    ],
+    "Salary": {
+        "Avg": 55000.0,
+        "Missing Values": 1
+    },
+    "Experience": {
+        "Avg": 2.4444444444444446,
+        "Missing Values": 1
+    },
+    "City": [
+        "Pune",
+        "Nagpur",
+        "Mumbai",
+        "Nashik"
+    ]
+}
