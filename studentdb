@@ -4,5 +4,11 @@
         "roll_no": 1,
         "age": 19,
         "course": "AI"
+    },
+    "2": {
+        "name": "Srushti Dhabale",
+        "roll_no": 2,
+        "age": 21,
+        "course": "IT"
     }
 }
