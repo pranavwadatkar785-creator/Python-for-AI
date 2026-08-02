@@ -1,11 +1,18 @@
-import requests
+class APIConfig:
+    def __init__(self, api_key, model="gpt-3.5-turbo", max_tokens=100):
+        self.api_key = api_key
+        self.model = model
+        self.max_tokens = max_tokens
+        self.base_url = "https://api.openai.com/v1"
 
-# Download a web page
-response = requests.get("https://api.github.com")
-print(response.status_code)  # Should print 200
+# Create different configurations
+# Using positional for required arg, named for optional
+dev_config = APIConfig("sk-dev-key", max_tokens=50)
 
-# print(True and True and False)
+# Using all named arguments (clearest)
+prod_config = APIConfig(api_key="sk-prod-key", model="gpt-4", max_tokens=1000)
 
-line = "I am learning python for AI" #string are immutable so always store the result in a new variable or overwrite the existing variable
-line = line.replace("Ai", "Artificial Intelligence")
-print(line)
+# Access the configuration
+print(dev_config.model)        # gpt-3.5-turbo
+print(prod_config.model)       # gpt-4
+print(prod_config.max_tokens)  # 1000
