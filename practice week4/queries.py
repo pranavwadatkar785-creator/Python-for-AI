@@ -10,9 +10,9 @@ cursor = conn.cursor()
 # ''')
 
 def add_row(id,name,age):
-    cursor.execute(f'''
+    cursor.execute('''
         INSERT INTO users (id,name,age)
-        VALUES (?,?,?)''',(id,name,age))
+        VALUES (?,?,?)''', (id, name, age))
 
 user_id = int(input("Enter id: "))
 user_name = input("Enter name: ")

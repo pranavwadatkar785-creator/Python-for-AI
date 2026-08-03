@@ -1,9 +1,11 @@
+
 class APIConfig:
     def __init__(self, api_key, model="gpt-3.5-turbo", max_tokens=100):
         self.api_key = api_key
         self.model = model
         self.max_tokens = max_tokens
         self.base_url = "https://api.openai.com/v1"
+
 
 # Create different configurations
 # Using positional for required arg, named for optional
@@ -13,6 +15,20 @@ dev_config = APIConfig("sk-dev-key", max_tokens=50)
 prod_config = APIConfig(api_key="sk-prod-key", model="gpt-4", max_tokens=1000)
 
 # Access the configuration
-print(dev_config.model)        # gpt-3.5-turbo
-print(prod_config.model)       # gpt-4
+print(dev_config.model)  # gpt-3.5-turbo
+print(prod_config.model)  # gpt-4
 print(prod_config.max_tokens)  # 1000
+
+
+def calculate_total(items):
+    total = 0
+    for item in items:
+        total += item["price"] * item["quantity"]
+    return total
+
+
+shopping_cart = [
+    {"name": "apple", "price": 0.5, "quantity": 6},
+    {"name": "banana", "price": 0.3, "quantity": 8},
+]
+print(calculate_total(shopping_cart))
