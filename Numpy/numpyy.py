@@ -1,4 +1,4 @@
-import numpy as np 
+import numpy as np  # noqa: I001
 list1= [1,2,3,4] 
 arr1 = np.array(list1) 
 print(type(arr1)) 

@@ -1,5 +1,5 @@
-import numpy as np
-import numpy.ma as ma
+import numpy as np  # noqa: I001
+import numpy.ma as ma  # noqa: PLR0402
 
 # broadcasting
 a = np.array([1,2,3])
