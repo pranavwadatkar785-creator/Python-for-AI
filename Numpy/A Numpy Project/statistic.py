@@ -13,7 +13,7 @@ def min_marks(data):
     return np.nanmin(data[:,1:5], axis=0)
 
 def variance_marks(data):
-    return np.var(data[:,1:5], axis=0)
+    return np.nanvar(data[:,1:5], axis=0)
 
 def std_deviation_marks(data):
-    return np.std(data[:,1:5], axis=0)
+    return np.nanstd(data[:,1:5], axis=0)
